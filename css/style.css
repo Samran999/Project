@@ -194,10 +194,7 @@ body{
 .AddUser{
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 1.5rem;
-    padding-right: 3rem;
+    padding: 1.5rem 2rem 1.5rem 1.5rem;
     justify-content: center;
     border-radius: 1rem;
     width: 50vh;
@@ -222,7 +219,7 @@ body{
 }
 .AdduserHeading h6{
     font-family: "Gotham-Medium", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--FontColorMain);
     margin-left: 1rem;
 }
