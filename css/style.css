@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 :root {
@@ -44,31 +44,35 @@ body{
     background-color: var(--BGPrimary);
     overflow-x: hidden;
 }
+.NavbarWrapper{
+    background-color: var(--BGSecondry);
+    width: 100%;
+    margin: 0 auto;
+}
 .NavBar{
+    max-width: 100rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: var(--BGSecondry);
     justify-content: space-between;
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
 }
 .NavbarItems{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin: 0rem 5rem;
 }
 .NavbarItems a{
-    padding: 0rem 3rem;
+    margin-left: 5rem;
     font-family: 'Gotham-Medium', sans-serif;
     font-size: 1.5rem;
     text-decoration: none;
     color: var(--FontColorMain);
 }
-.NavbarItems a:nth-child(3){
-    padding-right: 1rem;
-}
 .JoinBtn{
     background-color: var(--BlockMainColor);
+    margin-right: 2rem;
     color: var(--FontColorMain);
     border: 0.1rem solid var(--FontColorMain);
     padding: 0.7rem 1rem;
@@ -78,9 +82,13 @@ body{
     font-weight: 600;
     width: 12rem;
 }
-.MainSection1 {
-    padding: 2rem 4rem;
+.SectionWrapper1{
     background-color: var(--BGSecondry);
+    width: 100%;
+    margin: 0 auto;
+}
+.MainSection1 {
+    max-width: 100rem;
 }
 .MainSection1 h1{
     text-align: center;
@@ -99,12 +107,6 @@ body{
     background-position: bottom;
     background-size: contain;
 }
-/* .MainSection1 img{
-    position: absolute;
-    top: 49%;
-    right: 0;
-    left: 42%;
-} */
 .MainSection1 h6{
     font-family: "Gotham-Light", sans-serif;
     font-size: 1.2rem;
@@ -139,100 +141,119 @@ body{
 #SliderText h6{
     padding: 0rem 2rem;
 }
+.SectionWrapper2{
+    width: 100%;
+    
+}
 .MainSection2{
     margin: 0.5rem 2.5rem;
+    max-width: 100rem;
+    margin: 0 auto;
 }
 .MainSection2 img{
     background-position: center;
     width: 100%;
     margin-top: -12rem;
 }
-.MainSection3{
-    padding: 0rem 5.5rem;
+.SectionWrapper3{
+    width: 100%;
 }
-
-
+.MainSection3{
+    padding: 0rem 4rem;
+    max-width: 80rem;
+    margin: 0 auto;
+}
 .SectionText{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: center;
 }
 .SectionText h2{
     font-family: "Boiling-Black", sans-serif;
     font-size: 3.5rem;
-
     color: var(--FontColorMain);
+    margin-left: 0;
 }
 .FeaturesUnderline{
     background-image: url(../images/features_brush_stroke.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
-    padding-bottom: 4.5rem;
+    padding-bottom: 80px;
 }
 .SectionText p{
     font-family: "Gotham-Book", sans-serif;
+    float: right;
     font-size: 1.2rem;
     text-align: center;
     color: var(--FontColorMain);
+    margin-right: 0;
 }
 .FeaturesSub{
     background-image: url(../images/sbu_features_brush.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-    padding-left: rem;
-    padding-bottom: 6rem;
+    padding-bottom: 50px;
 }
 .CardBox{
-    display: flex;
-    flex-direction: row;
+    display:flex;
     align-items: center;
     justify-content: center;
+    margin-top: 3rem;
+    width: 100%;
 }
 .AddUser{
-    display: flex;
+    max-width: 20rem;
+    flex: 3 3 auto;
     flex-direction: column;
-    padding: 1.5rem 2rem 1.5rem 1.5rem;
+    height: 13rem;
+    padding: 1.7rem 3rem 1.7rem 1.5rem;
     justify-content: center;
     border-radius: 1rem;
-    width: 50vh;
-    height: 25vh;
     margin: 2rem 1rem;
     background-color: var(--BlockMainColor);
 }
 .AdduserHeading{
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    margin-left: 0;
 }
 .AddIcon{
     background-image: var(--IconsBGGradient);
     padding: 0.8rem 1rem;
     border-radius: 0.8rem;
+    margin: 0;
     
 }
 .AddIcon img{
-    width: 4vh
+    height: 1.5rem;
+    object-fit: contain;
 }
 .AdduserHeading h6{
     font-family: "Gotham-Medium", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: var(--FontColorMain);
     margin-left: 1rem;
 }
 .AddUser p{
     color: var(--FontColorMain);
     font-family: "Gotham-Book", sans-serif;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    line-height: 1.7rem;
+    margin-top: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+.FounderWrapper{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 90rem;
 }
 .OurFounder{
-    padding: 0rem 5rem;
+    padding: 0rem 4rem;
 }
 .OurFounder h1{
     font-family: "Boiling-Black", sans-serif;
@@ -244,24 +265,29 @@ body{
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
-    padding-bottom: 6rem;
+    padding-bottom: 100px;
 }
 .FoundersCard{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 8rem;
+    width: 100%;
+    margin-top: 10rem;
 }
 .FoundersBox{
     display: flex;
     flex-direction: column;
     background-color: var(--BlockMainColor);
-    margin-left: 2rem;
+    margin: 1rem 2rem;
     padding: 2.3rem;
     border-radius: 1rem;
-    width: 50vh;
+    margin-right: 0;
+    max-width: 20rem;
 
+}
+.FounDers{
+    width: 12rem;
 }
 .FoundersBox h6{
     font-family: "Boiling Demo", sans-serif;
@@ -294,8 +320,13 @@ body{
     margin-left: 0.5rem;
     margin-right: 1rem;
 }
+.SectionWrapper4{
+    width: 100%;
+    max-width: 85rem;
+}
 .MainSection4{
-    padding: 4rem 5rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
 }
 .AboutHeading{
     display: flex;
@@ -305,26 +336,28 @@ body{
     margin-bottom: 3rem;
 }
 .AboutHeading img{
-    width: 13%;
+    width: 100%;
+    max-width: 8rem;
 }
 .AboutHeading h1{
     font-family: "Boiling-Black", sans-serif;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--FontColorMain);
-    margin-bottom: 2rem;
+    margin-left: 0;
 }
 .AboutUnderline{
     background-image: url(../images/features_brush_stroke.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: initial;
-    padding-bottom: 6rem;
+    padding-bottom: 100px;
 }
 .AboutText p{
     color: var(--FontColorMain);
     line-height: 2rem;
     font-family: "Gotham-Book", sans-serif;
     font-weight: 600;
+    margin-top: 5rem;
 }
 .AppFooter{
     display: flex;
@@ -373,9 +406,6 @@ body{
     .NavbarItems{
         display: none;
     }
-    .MainSection1 h1{
-        margin: 0rem;
-    }
     .SectionText {
         display: block;
         
@@ -402,20 +432,15 @@ body{
     }
     
 }
-@media screen and (max-width: 600px) {
-    .NavbarItems{
+@media screen and (max-width: 760px) {
+    .AboutHeading img{
         display: none;
-    }
-    .NavBar{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
     .MainSection3{
         padding: 0rem 1rem;
     }
     .MainSection4{
-        padding: 2rem;
+        padding: 0rem 1rem;
     }
     .AddUser{
         margin-left: 0;
@@ -430,20 +455,16 @@ body{
     }
 }
 @media screen and (max-width: 450px) {
+    .AboutHeading h1{
+        font-size: 1.5rem;
+    }
     .NavBar{
         padding: 0;
     }
-    .MainSection1{
-        padding: 1rem 2rem
-    }
     .MainSection1 h1{
-        font-size: 3rem;
-    }
-    .HeadingUnderlined{
-        padding-bottom: 1rem;
-    }
-    .MainSection1 h6{
-        font-size: 1rem;
+        margin: 0;
+        font-size: 2rem;
+        line-height: 3rem;
     }
     .SliderBtn {
         padding-bottom: 5rem;
@@ -451,6 +472,10 @@ body{
     }
     .CardBox{
         margin-top: 8rem;
+    }
+    .AboutUnderline{
+        background-size: contain;
+        padding-bottom: 81px;
     }
     .SliDer{
         padding: 1rem;
@@ -468,16 +493,35 @@ body{
     
 }
 @media screen and (max-width: 320px) {
-    .AddIcon {
-        padding: 0.5rem;
+    .JoinBtn{
+        margin-right: 0;
     }
-    .AddUser {
-        margin-left: 0;
+    
+    .FeaturesUnderline {
+        padding-bottom: 80px;
+    }
+    .FoundersUnderline{
+        padding-bottom: 80px;
+    }
+    .AddUser{
+        padding: 0.7rem 2rem 0.7rem 0.5rem;
+        margin-right: 0;
     }
     .AdduserHeading h6{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+    }
+    .AddUser p{
+        font-size: 0.8rem;
     }
     .OurFounder h1{
         font-size: 2rem;
+    }
+    .FoundersBox{
+        max-width: 15rem;
+        padding: 0.5rem;
+    }
+    .SocialLinks a{
+        margin: 0 0.5rem;
+        padding: 0.5rem;
     }
 }
