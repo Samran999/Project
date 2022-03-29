@@ -1,8 +1,8 @@
-*{
-    margin: 0 auto;
+* {
+    margin: 0;
     padding: 0;
-}
-:root {
+  }
+  :root {
     --BGPrimary: #292929;
     --BGSecondry: #252525;
     --FontColorMain: white;
@@ -10,294 +10,307 @@
     --FGPrimary: #ff9d43;
     --BTNColor: #1e1e1e;
     --IconsBGGradient: linear-gradient(270deg, #585757 0%, #6b6b6b 100%);
-    --SliderIcon: -webkit-linear-gradient(137.37deg, #FF9D43 3.83%, #FF4E43 92.95%);
-}
-@font-face {
-    font-family: 'Gotham-Bold';
-    src: url(./fonts/Gotham-Bold.otf);
-}
-@font-face {
-    font-family: 'Gotham-Book';
-    src: url(./fonts/Gotham-Book.otf);
-}
-@font-face {
-    font-family: 'Gotham-Medium';
-    src: url(./fonts/Gotham-Medium.otf);
-}
-@font-face {
-    font-family: 'Gotham-Light';
-    src: url(./fonts/Gotham-Light.otf);
-}
-@font-face {
-    font-family: 'Gotham-ExtraLight';
-    src: url("./fonts/Gotham-ExtraLight.otf");
-}
-@font-face {
-    font-family: 'MyriadPro-Regular';
-    src: url(./fonts/MyriadPro-Regular.otf);
-}
-@font-face {
-    font-family: "Boiling-Black";
-    src: url(./fonts/Boiling-BlackDemo.ttf);
-}
-body{
+    --SliderIcon: -webkit-linear-gradient(
+      137.37deg,
+      #ff9d43 3.83%,
+      #ff4e43 92.95%
+    );
+  }
+  body {
     background-color: var(--BGPrimary);
     overflow-x: hidden;
-}
-.NavbarWrapper{
+  }
+  .landingPageContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .NavbarWrapper {
     background-color: var(--BGSecondry);
     width: 100%;
-    margin: 0 auto;
-}
-.NavBar{
-    max-width: 100rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .NavBar {
+    width: 70rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 2rem;
-}
-.NavbarItems{
+    margin: 2rem;
+  }
+  .NavbarItems {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 0rem 5rem;
-}
-.NavbarItems a{
+  }
+  .NavbarItems a {
     margin-left: 5rem;
-    font-family: 'Gotham-Medium', sans-serif;
+    font-family: "Gotham", sans-serif;
     font-size: 1.5rem;
     text-decoration: none;
     color: var(--FontColorMain);
-}
-.JoinBtn{
+  }
+  .JoinBtn {
     background-color: var(--BlockMainColor);
-    margin-right: 2rem;
     color: var(--FontColorMain);
     border: 0.1rem solid var(--FontColorMain);
     padding: 0.7rem 1rem;
     border-radius: 0.5rem;
-    font-family: 'Gotham-Medium', sans-serif;
+    font-family: "Gotham", sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
     width: 12rem;
-}
-.SectionWrapper1{
+  }
+  .mainTagSectionWrapper {
     background-color: var(--BGSecondry);
     width: 100%;
-    margin: 0 auto;
-}
-.MainSection1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .MainSection1 {
     max-width: 100rem;
-}
-.MainSection1 h1{
+  }
+  .MainSection1 h1 {
     text-align: center;
     margin: 0rem 10rem;
-    line-height: 7rem;
-    font-family: "Boiling-Black", sans-serif;
+    line-height: 5.5rem;
+    font-family: "Boiling Demo", sans-serif;
     font-size: 4.5rem;
     color: var(--FontColorMain);
-}
-
-.HeadingUnderlined{
+  }
+  
+  .HeadingUnderlined {
     color: var(--FGPrimary);
     background-image: url(../images/UNDERLINE_BRUSH_STROKE\ 1.png);
     background-repeat: no-repeat;
     padding-bottom: 1.5rem;
     background-position: bottom;
     background-size: contain;
-}
-.MainSection1 h6{
-    font-family: "Gotham-Light", sans-serif;
-    font-size: 1.2rem;
-    padding: 2rem 0rem;
-    line-height: 1.5rem;
+  }
+  .MainSection1 h6 {
+    font-family: "Gotham", sans-serif;
+    font-size: 1rem;
+    padding: 1.2rem 0rem;
     color: var(--FontColorMain);
     text-align: center;
-}
-.SliderBtn{
+  }
+  .SliderBtn {
     padding-bottom: 5rem;
     margin-bottom: 3rem;
-}
-#ButtonBackground{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #ButtonBackground {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: var(--BlockMainColor);
     width: fit-content;
-    margin: 0 auto;
     border-radius: 3rem;
-}
-.SliDer{
+  }
+  .Slider {
     padding: 1.5rem 1.7rem;
     border-radius: 3rem;
     background-color: var(--FontColorMain);
-}
-#SliderText{
-    padding: 0rem 5rem;
-    border-radius: 25%
-}
-#SliderText h6{
-    padding: 0rem 2rem;
-}
-.SectionWrapper2{
+  }
+  #SliderText {
+    padding-left: 4rem;
+    padding-right: 5rem;
+    border-radius: 25%;
+  }
+  #SliderText h6 {
+    padding: 0rem 1rem;
+  }
+  .demoWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    
-}
-.MainSection2{
-    margin: 0.5rem 2.5rem;
-    max-width: 100rem;
-    margin: 0 auto;
-}
-.MainSection2 img{
+  }
+  .MainSection2 {
+  }
+  .MainSection2 img {
     background-position: center;
     width: 100%;
-    margin-top: -12rem;
-}
-.SectionWrapper3{
+    margin-top: -15%;
+  }
+  .featuresWrapper {
+    margin-top: -7rem;
     width: 100%;
-}
-.MainSection3{
-    padding: 0rem 4rem;
-    max-width: 80rem;
-    margin: 0 auto;
-}
-.SectionText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .MainSection3 {
+    width: 70rem;
+  }
+  
+  .SectionText {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-.SectionText h2{
-    font-family: "Boiling-Black", sans-serif;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .SectionText h2 {
+    font-family: "Boiling Demo", sans-serif;
     font-size: 3.5rem;
     color: var(--FontColorMain);
     margin-left: 0;
-}
-.FeaturesUnderline{
+  }
+  .featuresSubsectionHeader {
+    margin-top: 4.5rem;
+  }
+  .FeaturesSub {
+    background-image: url(../images/sbu_features_brush.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    padding-bottom: 4rem;
+    margin-top: 1.8rem;
+    margin-right: 2rem;
+  }
+  .FeaturesUnderline {
     background-image: url(../images/features_brush_stroke.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
     padding-bottom: 80px;
-}
-.SectionText p{
+  }
+  .SectionText p {
     font-family: "Gotham-Book", sans-serif;
     float: right;
     font-size: 1.2rem;
     text-align: center;
     color: var(--FontColorMain);
     margin-right: 0;
-}
-.FeaturesSub{
-    background-image: url(../images/sbu_features_brush.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    padding-bottom: 50px;
-}
-.CardBox{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3rem;
-    width: 100%;
-}
-.AddUser{
-    max-width: 20rem;
-    flex: 3 3 auto;
-    flex-direction: column;
-    height: 13rem;
-    padding: 1.7rem 3rem 1.7rem 1.5rem;
-    justify-content: center;
-    border-radius: 1rem;
-    margin: 2rem 1rem;
-    background-color: var(--BlockMainColor);
-}
-.AdduserHeading{
-    
+  }
+  .featuresStack {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    margin-left: 0;
-}
-.AddIcon{
+    justify-content: center;
+  }
+  .item3Stack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .featuresContainer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    column-gap: 1rem;
+    width: 100%;
+  }
+  .featureCardContent {
+    margin-top: 2rem;
+    max-width: 18.5rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 2rem;
+    border-radius: 1rem;
+    background-color: var(--BlockMainColor);
+  }
+  .featureCardContentHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+    width: 20rem;
+  }
+  .featureCardIconSection {
     background-image: var(--IconsBGGradient);
-    padding: 0.8rem 1rem;
     border-radius: 0.8rem;
-    margin: 0;
-    
-}
-.AddIcon img{
-    height: 1.5rem;
-    object-fit: contain;
-}
-.AdduserHeading h6{
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .featureCardIconSection img {
+  }
+  .featureCardContentHead h6 {
     font-family: "Gotham-Medium", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: var(--FontColorMain);
     margin-left: 1rem;
-}
-.AddUser p{
+  }
+  .featureCardContent p {
     color: var(--FontColorMain);
     font-family: "Gotham-Book", sans-serif;
     margin-top: 1.2rem;
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.5rem;
-}
-.FounderWrapper{
+  }
+  .foundersWrapper {
+    margin-top: 3rem;
     width: 100%;
-    margin: 0 auto;
-    max-width: 90rem;
-}
-.OurFounder{
-    padding: 0rem 4rem;
-}
-.OurFounder h1{
-    font-family: "Boiling-Black", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ourFounders {
+  }
+  .foundersContainer {
+    width: 70rem;
+  }
+  .ourFounders h1 {
+    font-family: "Boiling Demo", sans-serif;
     color: var(--FontColorMain);
     font-size: 3rem;
-}
-.FoundersUnderline{
+  }
+  .FoundersUnderline {
     background-image: url(../images/features_brush_stroke.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
     padding-bottom: 100px;
-}
-.FoundersCard{
-    display: flex;
-    flex-direction: row;
+  }
+  .foundersCards {
+    display: grid;
     align-items: center;
     justify-content: center;
+    grid-template-columns: auto auto auto;
+    column-gap: 1rem;
     width: 100%;
-    margin-top: 10rem;
-}
-.FoundersBox{
+    margin-top: 6rem;
+  }
+  .foundersBox {
+    margin-top: 1rem;
+    width: 18.5rem;
     display: flex;
     flex-direction: column;
     background-color: var(--BlockMainColor);
-    margin: 1rem 2rem;
-    padding: 2.3rem;
+    padding: 2rem;
     border-radius: 1rem;
-    margin-right: 0;
-    max-width: 20rem;
-
-}
-.FounDers{
+  }
+  .FounDers {
     width: 12rem;
-}
-.FoundersBox h6{
+  }
+  .foundersBox h6 {
     font-family: "Boiling Demo", sans-serif;
     font-size: 1.5rem;
     color: var(--FontColorMain);
     margin-top: 1rem;
     text-align: center;
     font-weight: 400;
-}
-.FoundersBox p{
+  }
+  .foundersBox p {
     text-align: center;
     margin-top: 0.5rem;
     font-family: "Gotham-Book", sans-serif;
@@ -305,78 +318,88 @@ body{
     color: var(--FGPrimary);
     font-size: 1rem;
     line-height: 1.4rem;
-}
-.SocialLinks{
+  }
+  .SocialLinks {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 2rem;
-}
-.SocialLinks a{
+  }
+  .SocialLinks a {
     background-image: var(--IconsBGGradient);
     padding: 0.7rem;
     border-radius: 0.7rem;
-    margin-left: 0.5rem;
-    margin-right: 1rem;
-}
-.SectionWrapper4{
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .aboutSectionWrapper {
     width: 100%;
-    max-width: 85rem;
-}
-.MainSection4{
-    padding: 2rem 6rem;
-    margin: 0 auto;
-}
-.AboutHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .MainSection4 {
+    width: 70rem;
+  }
+  .AboutHeading {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 3rem;
-}
-.AboutHeading img{
+  }
+  .AboutHeading img {
+    margin-top: 3rem;
     width: 100%;
     max-width: 8rem;
-}
-.AboutHeading h1{
-    font-family: "Boiling-Black", sans-serif;
+  }
+  .AboutHeading h1 {
+    font-family: "Boiling Demo", sans-serif;
     font-size: 3rem;
     color: var(--FontColorMain);
     margin-left: 0;
-}
-.AboutUnderline{
+  }
+  .AboutUnderline {
     background-image: url(../images/features_brush_stroke.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: initial;
     padding-bottom: 100px;
-}
-.AboutText p{
+  }
+  .AboutText p {
     color: var(--FontColorMain);
     line-height: 2rem;
     font-family: "Gotham-Book", sans-serif;
     font-weight: 600;
     margin-top: 5rem;
-}
-.AppFooter{
+  }
+  .footerSection {
+    width: 100%;
     display: flex;
-    padding: 2rem 0rem;
     flex-direction: column;
     align-items: center;
+  }
+  .AppFooter {
+    margin-top: 2rem;
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--BlockMainColor);
-}
-.AppFooter h1{
+  }
+  .AppFooter h1 {
     font-family: "Boiling-Black", sans-serif;
     font-size: 2rem;
     color: var(--FontColorMain);
     margin-bottom: 1rem;
-}
-.AppName{
+  }
+  .AppName {
     font-family: "Boiling-Black", sans-serif;
     color: var(--FGPrimary);
-}
-.FooterButton{
+  }
+  .FooterButton {
     background-color: var(--BlockMainColor);
     color: var(--FontColorMain);
     font-family: "Gotham-Book", sans-serif;
@@ -385,143 +408,168 @@ body{
     border-radius: 0.5rem;
     border: 1px solid var(--FontColorMain);
     margin-top: 1rem;
-}
-.TermsCondition{
+  }
+  .TermsCondition {
     margin-top: 2rem;
     font-family: "Gotham-Book", sans-serif;
     color: var(--FontColorMain);
     line-height: 2rem;
     font-weight: 600;
-}
-.TermsCondition a{
+  }
+  .TermsCondition a {
     text-decoration: underline;
     color: var(--FontColorMain);
-}
-.CopyRight{
+  }
+  .CopyRight {
     font-family: "Gotham-Book", sans-serif;
     color: var(--FontColorMain);
     margin-top: 1rem;
-}
-@media screen and (max-width: 1150px) {
-    .NavbarItems{
-        display: none;
+  }
+  @media screen and (max-width: 1150px) {
+    .NavBar {
+      width: 100%;
     }
-    .SectionText {
-        display: block;
-        
+    .NavbarItems {
+      display: none;
     }
-    .SectionText h2{
-        text-align: left;
+    .MainSection3,
+    .foundersContainer {
+      width: 100%;
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
-    .FeaturesSub{
-        display: none;
+    .MainSection4 {
+      width: 100%;
     }
-    .SectionText p {
-        display: none;
+    .featuresWrapper,
+    .foundersWrapper {
+      justify-content: center;
+      margin: 0rem;
     }
-    .CardBox{
-        flex-direction: column;
+    .featuresSubsectionHeader {
+      display: none;
     }
-    .FoundersCard{
-        flex-direction: column;
-        margin-top: 5rem;
+    .featuresStack {
+      margin-top: 6rem;
     }
-    .FoundersBox{
-        margin-top: 3rem;
-        margin-left: 0;
+    .item3 {
+      grid-column: 1 / span 2;
     }
+    .featuresContainer {
+      grid-template-columns: auto auto;
+      width: 100%;
+    }
+    .foundersCards {
+      grid-template-columns: auto auto;
+    }
+    .SectionText,
+    .MainSection4 .ourFounders {
+      padding-left: 3rem;
+    }
+  }
+  @media screen and (max-width: 760px) {
+    .AboutHeading img {
+      display: none;
+    }
+  
+    .item3 {
+      grid-column: 1 / span 1;
+      margin: 0;
+      display: block;
+    }
+    .featuresContainer {
+      grid-template-columns: auto;
+      align-items: center;
+      width: 100%;
+    }
+    .foundersCards {
+      grid-template-columns: auto;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .OurFounder {
+      padding: 0rem 1rem;
+      margin: 0;
     
-}
-@media screen and (max-width: 760px) {
-    .AboutHeading img{
-        display: none;
     }
-    .MainSection3{
-        padding: 0rem 1rem;
+    .OurFounder h1 {
+      font-size: 2.5rem;
+      padding-left: 0;
+      margin-left: 2rem;
     }
-    .MainSection4{
-        padding: 0rem 1rem;
+    .aboutSectionWrapper{
+        margin-left: 2rem;
     }
-    .AddUser{
-        margin-left: 0;
+  }
+  @media screen and (max-width: 450px) {
+    .AboutHeading h1 {
+      font-size: 1.5rem;
     }
-    .OurFounder{
-        padding:0rem 1rem;
-        margin: 0;
+    .NavBar {
+      padding: 0;
     }
-    .OurFounder h1{
-        font-size: 2.5rem;
-        padding-left: 0;
-    }
-}
-@media screen and (max-width: 450px) {
-    .AboutHeading h1{
-        font-size: 1.5rem;
-    }
-    .NavBar{
-        padding: 0;
-    }
-    .MainSection1 h1{
-        margin: 0;
-        font-size: 2rem;
-        line-height: 3rem;
+    .MainSection1 h1 {
+      margin: 0;
+      font-size: 2rem;
+      line-height: 3rem;
     }
     .SliderBtn {
-        padding-bottom: 5rem;
-        margin-bottom: 6rem;
+      padding-bottom: 5rem;
+      margin-bottom: 6rem;
     }
-    .CardBox{
-        margin-top: 8rem;
+    .CardBox {
+      margin-top: 8rem;
     }
-    .AboutUnderline{
-        background-size: contain;
-        padding-bottom: 81px;
+    .AboutUnderline {
+      background-size: contain;
+      padding-bottom: 81px;
     }
-    .SliDer{
-        padding: 1rem;
+    .SliDer {
+      padding: 1rem;
     }
     #SliderText {
-        padding: 0rem 2.5rem;
+      padding: 0rem 2.5rem;
     }
     #SliderText h6 {
-        padding: 0rem 0rem;
-        font-size: 0.8rem;
+      padding: 0rem 0rem;
+      font-size: 0.8rem;
     }
-    .AddUser{
-        margin-left: 0;
+    .AddUser {
+      margin-left: 0;
     }
-    
-}
-@media screen and (max-width: 320px) {
-    .JoinBtn{
-        margin-right: 0;
+  }
+  @media screen and (max-width: 320px) {
+    .JoinBtn {
+      margin-right: 0;
     }
-    
+  
     .FeaturesUnderline {
-        padding-bottom: 80px;
+      padding-bottom: 80px;
     }
-    .FoundersUnderline{
-        padding-bottom: 80px;
+    .FoundersUnderline {
+      padding-bottom: 80px;
     }
-    .AddUser{
-        padding: 0.7rem 2rem 0.7rem 0.5rem;
-        margin-right: 0;
+    .AddUser {
+      padding: 0.7rem 2rem 0.7rem 0.5rem;
+      margin-right: 0;
     }
-    .AdduserHeading h6{
-        font-size: 1.2rem;
+    .AdduserHeading h6 {
+      font-size: 1.2rem;
     }
-    .AddUser p{
-        font-size: 0.8rem;
+    .AddUser p {
+      font-size: 0.8rem;
     }
-    .OurFounder h1{
-        font-size: 2rem;
+    .OurFounder h1 {
+      font-size: 2rem;
     }
-    .FoundersBox{
-        max-width: 15rem;
-        padding: 0.5rem;
+    .FoundersBox {
+      max-width: 15rem;
+      padding: 0.5rem;
     }
-    .SocialLinks a{
-        margin: 0 0.5rem;
-        padding: 0.5rem;
+    .SocialLinks a {
+      margin: 0 0.5rem;
+      padding: 0.5rem;
     }
-}
+  }
+  
